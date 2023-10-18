@@ -14,7 +14,7 @@
 
   <nav class="navbar" style="background-color: #a05822;">
     <div class="container-fluid">
-      <a class="navbar-brand fw-bold" href="#">The Blind Hunt</a>
+      <a id="Home" class="navbar-brand fw-bold" href="#"><img class="img-fluid" src="LOGO.png" alt="Logo.png" style="width: 15%;"></a>
       <ul class="nav justify-content-end">
         <li class="nav-item">
           <a class="nav-link" style="color: black;"href="#AboutP">About</a>
@@ -76,9 +76,9 @@
 <footer>
 
 
-  <div class="container">
+  <div class="container" style="color:white; padding: 10%">
     <h1>Contact Us</h1>
-    <form id="contact-form" method="post" action="process_form.php">
+    <form id="ContactP" method="post">
         <div class="mb-3">
             <label for="name" class="form-label">Your Name</label>
             <input type="text" class="form-control" id="name" name="name" required>
@@ -91,7 +91,20 @@
             <label for="message" class="form-label">Message</label>
             <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        
+
+        
+
+
+        <a href="#Home">
+        <button id="reloadButton" type="button" class="btn btn-primary">Submit</button>
+        <script>
+          // JavaScript to reload the page when the button is clicked
+          document.getElementById('reloadButton').addEventListener('click', function() {
+              location.reload();
+          });
+      </script>
+        </a>
     </form>
 </div>
 
@@ -101,17 +114,18 @@
 
     <div class="row p-3">
       <div class="col">
-        Column
+        <img class="img-fluid" src="feutechlogo.png" alt="">
       </div>
       <div class="col">
-        
+        <img class="img-fluid" src="Unity-logo.png" alt="" style="width: 40%;">
+        <img class="img-fluid" src="Teen.png" alt="" style="width: 40%;">
       </div>
       <div class="col">
-        
-        <P style="color: white; font-size:1vw;"><img class="img-fluid" style="width: 40%; margin: 5%;" src="TeamLogo.png" alt="Logo.png">Develop By NoNameRs</P>
+        <img class="img-fluid" style="width: 40%; margin: 5%;" src="TeamLogo.png" alt="Logo.png">
+        <P style="color: white; font-size:1vw;">Develop By NoNameRs</P>
       </div>
     </div>
-    <img src="feutechlogo.png" alt="">
+    
     <p style="color: white; font-size:1vw;">©2023 Bajo, Gonzales, Lamorena, Pascual and Salvador. All Rights Reserved</p>
   </div>
 </footer>

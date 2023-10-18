@@ -74,21 +74,45 @@
 
 </body>
 <footer>
+
+
+  <div class="container">
+    <h1>Contact Us</h1>
+    <form id="contact-form" method="post" action="process_form.php">
+        <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+
+
   <div class="container text-center">
-    <P id="ContactP" style="color: white; font-size:2vw; padding: 10%;">The Blind Hunt is Contact us here test</P>
-  </div>
-  <div class="container text-center">
-    <div class="row">
+
+    <div class="row p-3">
       <div class="col">
         Column
       </div>
       <div class="col">
-        Column
+        
       </div>
       <div class="col">
-        Column
+        
+        <P style="color: white; font-size:1vw;"><img class="img-fluid" style="width: 40%; margin: 5%;" src="TeamLogo.png" alt="Logo.png">Develop By NoNameRs</P>
       </div>
     </div>
+    <img src="feutechlogo.png" alt="">
+    <p style="color: white; font-size:1vw;">©2023 Bajo, Gonzales, Lamorena, Pascual and Salvador. All Rights Reserved</p>
   </div>
 </footer>
 </html>
